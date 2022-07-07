@@ -4,44 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="search_div">
-        <input type="text" placeholder="Type your city here" id="search">
-        <button type="submit" id="btn">search</button>
+    <div class="par">
+
+        <div class="parent">
+
+            <div class="search_div">
+                <input type="text" placeholder="Type your city here" id="search">
+                <button type="submit" id="btn">search</button>
+            </div>
+
+            <div class="main">
+
+                <div class="main0">
+                    <p class="city" id="city"></p>
+                    <p id="tdy"></p>
+                    <p id="today"></p>
+                    <p class="temp"> <span id="tmp_logo"></span><span id="temp"></span> </p>
+                    <p class="env" id="env"></p>
+                </div>
+
+                <div class="main1">
+                    <p class="winds"><span id="sunrise"></span></p>
+                    <p class="visi"><span id="sunset"></span></p>
+                </div>
+
+                <div class="main2">
+                    <p class="hum"><span id="hum"></span> </p>
+                    <p class="dew"><span id="dew"></span></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        
+        <div class="we_data">
+
+            <div class="hour_div">
+                <h4>Next 24 hours</h4>
+                <div class="hours_data" id="hours_data">
+                <!-- ----------div for appending hours data---------- -->
+                </div>
+            </div>
+
+            <div class="week_div">
+                <h4>Weekly</h4>
+                <div class="days_data" id="days_data">
+                <!-- ----------div for appending weekly data---------- -->
+                </div>
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="main">
-
-        <div class="main0">
-            <p class="city" id="city"></p>
-            <p id="tdy"></p>
-            <p id="today"></p>
-            <p class="temp"> <span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.502 3.502 0 0 1 7 8zm4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/>
-                <path d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0v-1zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708l.707-.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708l-.708-.707zm1.734 3.374a2 2 0 1 1 3.296 2.198c.199.281.372.582.516.898a3 3 0 1 0-4.84-3.225c.352.011.696.055 1.028.129zm4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377zM14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
-              </svg></span><span id="temp"></span> </p>
-            <p class="env" id="env"></p>
-        </div>
-
-        <div class="main1">
-            <p class="wind"><span id="sunrise"></span></p>
-            <p class="visi"><span id="sunset"></span></p>
-        </div>
-
-        <div class="main2">
-            <p class="hum"><span id="hum"></span> </p>
-            <p class="dew"><span id="dew"></span></p>
-        </div>
-
-    </div>
-
-<div class="days_data" id="days_data">
-
-</div>
-
 </body>
 </html>
 <script src="script.js"></script>

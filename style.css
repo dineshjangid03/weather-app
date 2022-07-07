@@ -1,3 +1,4 @@
+/* ------------------ global css --------------------*/
 *{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -10,6 +11,21 @@ background: url(https://thumbs.gfycat.com/ConfusedMetallicBellfrog-size_restrict
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+}
+
+
+/*------------------ css for parent div ---------------*/
+.parent{
+    width: 90%;
+    margin: auto;
+}
+
+
+/*------------------- css for search div -----------------*/
+.search_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 #search{
     width: 220px;
@@ -27,68 +43,125 @@ input{
     width: 60px;
     border-radius: 0 5px 5px 0;
 }
-.search_div{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
+
+
+/*--------------------- css for main div ----------------*/
 .main{
     text-align: center;
-    width: 50%;
     margin: auto;
     margin-top: 30px;
 }
+
+
+/*-------------------- css for main0 div ---------------------*/
 .main0{
     padding: 10px;
 }
+.city{
+    font-size: 30px;
+}
+.temp{
+    font-size: 40px;
+    display: flex;
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+}
+#tmp_logo>img{
+    max-width: 80px;
+}
+#temp{
+    margin-top: 18px;
+}
+.env{
+    font-size: 25px;
+}
+
+
+/*----------------------- css for main1 div --------------------*/
 .main1{
     display: flex;
     justify-content: center;
     padding: 10px;
     font-size: 14px;
 }
+.visi{
+    margin-left: 20px;
+}
+
+
+/*------------------------ css for main2 div -------------------*/
 .main2{
     display: flex;
     justify-content: center;
     padding: 10px;
     font-size: 14px;
 }
-.city{
-    font-size: 30px;
-}
-.temp{
-    font-size: 60px;
-}
-.env{
-    font-size: 25px;
-}.visi{
-    margin-left: 20px;
-}
 .dew{
     margin-left: 20px;
 }
-.days_data{
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(130px,1fr));
+
+
+/*----------------------- css for hour data --------------------*/
+.we_data{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.hours_data{
+    display: flex;
+    overflow:auto;
     gap: 10px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .day_card{
-    /* width: 10%; */
     padding: 8px;
     border: 1px solid rgb(210, 207, 207);
     border-radius: 5px;
+    margin-bottom: 10px;
+}
+.day{
+    font-size: 15px;
+}
+.day_tmp{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.weth_logo{
+    width: 30px;
+}
+.hour_weth{
+    font-size: 14px;
+}
+.wind{
+    font-size: 8px;
+}
+
+
+/*-----------------------  css for week data ------------------------*/
+.week_div{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.days_data{
+    display: flex;
+    overflow:auto;
+    gap: 10px;
+    margin: auto;
+    margin-top: 10px;  
 }
 .tmp_div{
     display: flex;
+}
+.sun_div{
+    display: flex;
     margin-top: 8px;
 }
-.day{
-    margin-bottom: 8px;
-    font-size: 15px;
+.sunset{
+    margin-left: 10px;
 }
+
 .min_temp{
     font-size: 12px;
     margin-left: 10px;
